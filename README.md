@@ -32,30 +32,44 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. What is the DOM?
 
+The DOM (Document Object Model) is an API that acts as a bridge between your code and the browser so you can interact with and manipulate your code.
+
 2. What is an event?
+
+An event is is used in conjustion with functions and allows specific behavior based on an event.  For instance, a click event, will allow certain things to happen on your page, when a specific item is clicked.
 
 3. What is an event listener?
 
+An event listener is the code that enables the functionality for the page to register an event, once it's occurred, to allow the specific/intended behavior.
+
 4. Why would we convert a NodeList into an Array?
+
+Not all methods are available on a NodeList, so we need to sometimes convert the NodeList into an array so that we can access the other methods.  For instance, in our code in the sprint challenge today, we needed to create an array as such:
+
+this.cards = Array.from(this.cards).map(card => new TabCard(card))
+
+so we could map the cards to create a new card.
 
 5. What is a component?
 
+A component is a grouping of html/css/javascript that acts as a bit of reusable code, so we can create new elements and instances of already occuring items, without having to rewrite the code each time.  For instance, in this sprint, the card elements are components.
+
 ### Git Set up
 
-* [ ] Fork the project into your GitHub user account
-* [ ] Clone the forked project into a directory on your machine
-* [ ] Create a pull request before you start working on the project requirements.  You will continuously push your updates throughout the project.
-* [ ] You are now ready to build this project with your preferred IDE
+* [X] Fork the project into your GitHub user account
+* [X] Clone the forked project into a directory on your machine
+* [X] Create a pull request before you start working on the project requirements.  You will continuously push your updates throughout the project.
+* [X] You are now ready to build this project with your preferred IDE
 
 ## Minimum Viable Product
 
 Your finished project must include all of the following requirements:
 
-* [ ] Look through the HTML code paying particular attention to the Tabs component and the Cards components. You will notice they share a data attribute. We will be using this data attribute to determine which cards should show when each tab is selected.
+* [X] Look through the HTML code paying particular attention to the Tabs component and the Cards components. You will notice they share a data attribute. We will be using this data attribute to determine which cards should show when each tab is selected.
 
-* [ ] Following the instructions in the `Tabs.js` file, complete the `TabLink`, and `TabCard` class components. It will look and feel very similar to the last project we worked on, but with a twist. Now, instead of one `Item` to display, we will need to display a collection of `Cards`. Think about ways to iterate over an array and manipulate each item.  **Note: You will need to un-comment the code after the lines of instructions.  The code is commented out so you can work error-free**
+* [X] Following the instructions in the `Tabs.js` file, complete the `TabLink`, and `TabCard` class components. It will look and feel very similar to the last project we worked on, but with a twist. Now, instead of one `Item` to display, we will need to display a collection of `Cards`. Think about ways to iterate over an array and manipulate each item.  **Note: You will need to un-comment the code after the lines of instructions.  The code is commented out so you can work error-free**
 
-* [ ] Once you get your `Tab` component working properly add a couple more articles yourself and check out how it works.
+* [X] Once you get your `Tab` component working properly add a couple more articles yourself and check out how it works.
 
 ## Stretch Problems
 
